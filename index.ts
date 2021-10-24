@@ -95,13 +95,6 @@ class Funcionario {
 
 const funcionario = new Funcionario();
 
-// função para calcular horas extras
-// function calcularHoraExtra(salarioBruto: number, qtdHorasExtras: number){
-//     let calcHrs = ((salarioBruto / 200) * 1.5) * qtdHorasExtras;
-//     console.log("horas extras: " + calcHrs)
-// }
-
-
 function calcularHoraExtra(){
     console.log("Calculando Horas Extras...")
 
@@ -240,7 +233,7 @@ function calculaFolhaPgto(nomeFunc: string, salario: string, horasExtras?: strin
   
 }
 
-//função para montar dados da folha de pagamento
+//função para montar dados da folha de pagamento 
 function modeloFolhaPagamento() {
     console.log({
         'Nome funcionário: ': funcionario.getNome(),
@@ -255,11 +248,8 @@ function modeloFolhaPagamento() {
     })
 }
 
+//chama função passando os argumentos por parametro
 calculaFolhaPgto(process.argv[2], process.argv[3], process.argv[4]);
 
-// function montaFolhaPagto() {
-//     console.log({
-//         "Nome: " : Funcionario.
-//     })
-// }
+
 
