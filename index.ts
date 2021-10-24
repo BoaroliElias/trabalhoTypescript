@@ -236,12 +236,26 @@ function calculaFolhaPgto(nomeFunc: string, salario: string, horasExtras?: strin
     calcularIRRF();
 
     console.log('FOLHA DE PAGAMENTO DO(A) ' + nomeFunc.toUpperCase());
-    // modeloFolhaPagamento();
+    modeloFolhaPagamento();
   
 }
 
 //função para montar dados da folha de pagamento
+function modeloFolhaPagamento() {
+    console.log({
+        'Nome funcionário: ': funcionario.getNome(),
+        'Valor salário bruto R$ ': funcionario.getSalarioBruto(),
+        'Quantidade total de horas extras: ': funcionario.getQtdHorasExtra(),
+        'Valor de horas extras R$ ': funcionario.getVlrHorasExtras(),
+        'Faixa de desconto INSS % ': funcionario.getFaixaDescontoInss(),
+        'Valor descontado INSS R$ ': funcionario.getValorDescontadoInss(),
+        'Faixa de desconto IR %': funcionario.getFaixaDescontoIr(),
+        'Valor descontado IR R$ ': funcionario.getValorDescontadoIr(),
+        'Valor salário líquido R$ ': funcionario.getSalarioLiquido(),
+    })
+}
 
+calculaFolhaPgto(process.argv[2], process.argv[3], process.argv[4]);
 
 // function montaFolhaPagto() {
 //     console.log({
