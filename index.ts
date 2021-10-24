@@ -211,7 +211,8 @@ function calcularIRRF(){
     funcionario.setValorSalarioLiquido(valorSalarioBaseIr);
 
     console.log("Faixa de desconto IRRF %: " + faixaDescontoIr);
-    console.log("Valor descontado IRFF R$: " + vlrDescontadoIr)
+    console.log("Valor descontado IRFF R$: " + vlrDescontadoIr);
+    console.log("Salário líquido R$ " + valorSalarioBaseIr);
 
 }
 
