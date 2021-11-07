@@ -238,7 +238,7 @@ function calculaFolhaPgto(nomeFunc: string, salario: string, horasExtras?: strin
 function modeloFolhaPagamento() {
     console.log({
         'Nome funcionário: ': funcionario.getNome(),
-        'Valor salário bruto R$ ': funcionario.getSalarioBruto(),
+        'Valor sa lário bruto R$ ': funcionario.getSalarioBruto(),
         'Quantidade total de horas extras: ': funcionario.getQtdHorasExtra(),
         'Valor de horas extras R$ ': funcionario.getVlrHorasExtras(),
         'Faixa de desconto INSS % ': funcionario.getFaixaDescontoInss(),
@@ -253,4 +253,4 @@ function modeloFolhaPagamento() {
 calculaFolhaPgto(process.argv[2], process.argv[3], process.argv[4]);
 
 
-
+//teste
